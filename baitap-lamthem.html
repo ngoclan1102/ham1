@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--tinh tong cac so nguyen to-->
+<script>
+    let arr = [17,2,5,12,29,11,18,33]
+    let total = 0
+    for (let i = 0; i < arr.length; i++) {
+        let check = true
+        if (arr[i] < 2) {
+            continue
+        } else {
+            for (let j = 2; j < (arr[i]-1); j++) {
+                if (arr[i] % j === 0) {
+                    check = false
+                   break;
+                }
+            }
+        }if (check) {
+                // total += arr[i]
+                // document.write()
+                document.write( arr[i] +'<br>')
+
+        }
+    }
+// tinh tong cac so chan nho hon 500 va chia het cho 3
+//     let total = 0
+//     for (let i = 0; i < 500; i++) {
+//         if (i%3===0&&i%2===0) {
+//             total+=i
+//         }
+//     }document.write(total)
+
+</script>
+</body>
+</html>
